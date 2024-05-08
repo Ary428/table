@@ -9,13 +9,18 @@ The Table Block for the [Editor.js](https://editorjs.io). Finally improved.
 Get the package
 
 ```shell
-npm i --save @editorjs/table
-```
-or
-
-```shell
 yarn add @editorjs/table
 ```
+
+Include module at your application
+
+```javascript
+import Table from '@editorjs/table'
+```
+
+Optionally, you can load this tool from CDN [JsDelivr CDN](https://cdn.jsdelivr.net/npm/@editorjs/table@latest)
+
+
 
 ## Usage
 
@@ -74,6 +79,10 @@ This Tool returns `data` in the following format
   }
 }
 ```
+
+## CSP support
+
+If you're using Content Security Policy (CSP) pass a `nonce` via [`<meta property="csp-nonce" content={{ nonce }} />`](https://github.com/marco-prontera/vite-plugin-css-injected-by-js#usestrictcsp-boolean) in your document head.
 
 # Support maintenance 🎖
 
